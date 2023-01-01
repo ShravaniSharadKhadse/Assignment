@@ -1,0 +1,32 @@
+package Basics;
+import java.util.Scanner;
+
+public class Demo1 {
+ public static void main(String[] args) {
+	
+	Scanner sc = new Scanner (System.in);
+	
+	System.out.print("Enter Salary :- ");
+	int sal = sc.nextInt();
+	float tax = 1;
+	double hra = 0.15*sal;
+	double da = 0.6*sal;
+	double bS;
+	bS = sal+hra+da-tax;
+	if(sal <= 500000 )
+	{
+		tax = (float)(sal * 0.20);
+		System.out.println("Basic Salary  :"+bS+"Rs.");
+	}
+	else if(sal>=500000 && sal <= 1000000)
+	{
+		tax = (float)(sal * 0.20);
+		System.out.println("Basic Salary  :"+bS+"Rs.");
+	}
+	else if(sal>1000000 )
+	{
+		tax = (float)(sal * 0.20);
+		System.out.println("Basic Salary :"+bS+"Rs.");
+		}
+	}
+}
